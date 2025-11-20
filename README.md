@@ -4,7 +4,9 @@ k8s lab to install jenkins and use it from github and gitea
 TLDR;
 
 ```bash
-ansible-playbook up.yaml
+pip install ansible kubernetes
+git submodule update --init --recursive
+ansible-playbook up.yml
 ```
 
 This is intended to be run on a machine with access to a kubernetes cluster, It also may be helpful to use docker for this part. If you are using this for class you should have to vsphere virtual machines. 1 will have truenas on it, the other stock ubuntu with support for a codespace.

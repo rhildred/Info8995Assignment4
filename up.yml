@@ -1,4 +1,5 @@
 ---
+- import_playbook: cdevops-gitea/up.yml
 - hosts: localhost
   tasks:
   - name: "Install kubernetes python package"
