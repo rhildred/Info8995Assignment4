@@ -1,4 +1,5 @@
 ---
+- import_playbook: gitea/down.yml
 - hosts: localhost
   tasks:
   - name: "remove kubernetes python package"
